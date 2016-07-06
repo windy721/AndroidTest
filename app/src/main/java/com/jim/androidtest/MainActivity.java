@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.jim.magicviewpager.transformer.RotateDownPageTransformer;
+
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
@@ -49,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 return view == o;
             }
         });
+        mViewPager.setPageTransformer(false, new RotateDownPageTransformer());
     }
 }
