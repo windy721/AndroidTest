@@ -8,9 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.jim.magicviewpager.transformer.AlphaPageTransformer;
 import com.jim.magicviewpager.transformer.NonPageTransformer;
+import com.jim.magicviewpager.transformer.PageTransformerBuilder;
 import com.jim.magicviewpager.transformer.RotateDownPageTransformer;
 import com.jim.magicviewpager.transformer.RotateUpPageTransformer;
+import com.jim.magicviewpager.transformer.RotateYPageTransformer;
 import com.jim.magicviewpager.transformer.ScaleInTransformer;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 return view == o;
             }
         });
-        mViewPager.setPageTransformer(true, new ScaleInTransformer());
+        mViewPager.setPageTransformer(true, new PageTransformerBuilder().addPageTransformer(new ScaleInTransformer()).addPageTransformer(new AlphaPageTransformer()).build());
     }
 }
