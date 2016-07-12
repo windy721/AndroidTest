@@ -1,7 +1,6 @@
 package com.jim.magicviewpager.transformer;
 
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -16,13 +15,13 @@ public class AlphaPageTransformer implements ViewPager.PageTransformer {
     public void transformPage(View view, float position) {
         if (position < -1) {
             view.setAlpha(mMinAlpha);
-        } else if (position <= 1) { // [-1,1]
+        } else if (position <= 1) { //[-1,1]
 
-            if (position < 0) //[0，-1]
+            if (position < 0) //[0,-1]
             {
                 float factor = mMinAlpha + (1 - mMinAlpha) * (1 + position);
                 view.setAlpha(factor);
-            } else//[1，0]
+            } else//[1,0]
             {
                 float factor = mMinAlpha + (1 - mMinAlpha) * (1 - position);
                 view.setAlpha(factor);

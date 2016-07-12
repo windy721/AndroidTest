@@ -20,12 +20,12 @@ public class RotateUpPageTransformer implements ViewPager.PageTransformer {
             page.setPivotY(0);
         } else if (position <= 1) {         // [-1,1]
 
-            if (position < 0)               // [0，-1]
+            if (position < 0)               // [0,-1]
             {
                 page.setPivotX(page.getWidth() * 0.5f * (1 - position));
                 page.setPivotY(0);
                 page.setRotation(mMaxRotate * position * -1);
-            } else                          // [1，0]
+            } else                          // [1,0]
             {
                 page.setPivotX(page.getWidth() * 0.5f * (1 - position));
                 page.setPivotY(0);

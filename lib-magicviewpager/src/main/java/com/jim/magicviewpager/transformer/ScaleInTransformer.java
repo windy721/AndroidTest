@@ -15,12 +15,12 @@ public class ScaleInTransformer implements ViewPager.PageTransformer {
             page.setScaleY(MIN_SCALE);
         } else if (position <= 1) {         // [-1,1]
 
-            if (position < 0)               // [0，-1]
+            if (position < 0)               // [0,-1]
             {
                 float scale = MIN_SCALE + (1 - MIN_SCALE) * (1 + position);
                 page.setScaleX(scale);
                 page.setScaleY(scale);
-            } else                          // [1，0]
+            } else                          // [1,0]
             {
                 float scale = MIN_SCALE + (1 - MIN_SCALE) * (1 - position);
                 page.setScaleX(scale);

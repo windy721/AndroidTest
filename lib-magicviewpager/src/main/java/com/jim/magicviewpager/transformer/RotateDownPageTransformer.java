@@ -19,12 +19,12 @@ public class RotateDownPageTransformer implements ViewPager.PageTransformer {
             view.setPivotY(view.getHeight());
         } else if (position <= 1) {         // [-1,1]
 
-            if (position < 0)               // [0，-1]
+            if (position < 0)               // [0,-1]
             {
                 view.setPivotX(view.getWidth() * 0.5f * (1 - position));
                 view.setPivotY(view.getHeight());
                 view.setRotation(mMaxRotate * position);
-            } else                          // [1，0]
+            } else                          // [1,0]
             {
                 view.setPivotX(view.getWidth() * 0.5f * (1 - position));
                 view.setPivotY(view.getHeight());

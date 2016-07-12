@@ -16,11 +16,11 @@ public class RotateYPageTransformer implements ViewPager.PageTransformer {
             page.setPivotX(page.getWidth());
         } else if (position <= 1) {         // [-1,1]
 
-            if (position < 0)               // [0，-1]
+            if (position < 0)               // [0,-1]
             {
                 page.setRotationY(MAX_ROTATE * position);
                 page.setPivotX(page.getWidth());
-            } else                          // [1，0]
+            } else                          // [1,0]
             {
                 page.setRotationY(MAX_ROTATE * position);
                 page.setPivotX(0);
