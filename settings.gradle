@@ -1,1 +1,1 @@
-include ':app', ':lib-magicviewpager'
+include ':app', ':lib-magicviewpager', ':recyclerviewitemanimation'

@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib-magicviewpager" />
+            <option value="$PROJECT_DIR$/recyclerviewitemanimation" />
           </set>
         </option>
         <option name="myModules">
@@ -17,6 +18,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib-magicviewpager" />
+            <option value="$PROJECT_DIR$/recyclerviewitemanimation" />
           </set>
         </option>
       </GradleProjectSettings>

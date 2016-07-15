@@ -1,5 +1,6 @@
 package com.jim.androidtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -58,5 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mViewPager.setPageTransformer(true, new PageTransformerBuilder().addPageTransformer(new ScaleInTransformer()).addPageTransformer(new AlphaPageTransformer()).build());
+
+        startActivity(new Intent(this, RecyclerViewItemAnimationActivity.class));
     }
 }
